@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/assets/images/bg-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+@media (min-width: 600px) {
+  body {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-image: url(/assets/images/bg-desktop.svg);
+    background-size: cover;
+    padding: 0 70px;
+  }
+}
+body header {
+  margin-top: 30px;
+}
+body header img {
+  display: block;
+  width: clamp(100px, 100px + 10vw, 200px);
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 900px) {
+  body main {
+    flex-direction: row;
+    text-align: left;
+    gap: 50px;
+  }
+}
+body main div.illustration-ct {
+  min-width: 45%;
+  max-width: 500px;
+}
+body main div.illustration-ct img {
+  display: block;
+  width: 100%;
+}
+body main div.content-ct h1 {
+  font-size: clamp(22px, 16px + 2vw, 36px);
+}
+body main div.content-ct p {
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: clamp(22px, 16px + 2.5vw, 30px);
+}
+body main div.content-ct button {
+  padding: 14px 80px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 8.4372301102px 16.8744602203px 0px rgba(0, 0, 0, 0.25);
+  color: #674baf;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+@media (min-width: 900px) {
+  body main div.content-ct button {
+    padding: 16px 70px;
+  }
+}
+body main div.content-ct .on {
+  color: white;
+  background-color: #e882e8;
+  box-shadow: none;
+}
+body footer {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+body footer .socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+body footer .socials div {
+  border: 1px solid white;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+body footer .socials .social-actived {
+  border: 1px solid #e882e8;
+}
+@media (min-width: 900px) {
+  body footer .socials {
+    justify-content: right;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

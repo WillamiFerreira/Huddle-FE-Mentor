@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+$violet: #674baf;
+$softMagenta: #e882e8;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: $violet;
+    color: white;
+}
